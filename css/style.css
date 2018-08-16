@@ -1,0 +1,125 @@
+body {
+  background-color: #849d8f;
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+/*------------------------------ main-header ------------------------------ */
+
+.main-header {
+  min-height: 73px;
+  box-shadow: 0 0 0 3px red;
+  width: 100%;
+}
+
+.wrapper {
+  width: 1146px;
+  box-shadow: 0 0 0 3px blue;
+  margin: 0 auto;
+}
+
+.main-nav.wrapper {
+  display: flex;
+} 
+
+.main-menu,
+.search-form,
+.login-form,
+.site-info-wrapper,
+.cart-table-wrapper {
+  display: none;
+}
+
+.main-logo {
+  margin-right: 24px;
+  margin-top: 9px;
+}
+
+/*---------- site-menu ---------- */
+
+.site-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0 0 3px red;
+  margin-right: auto;
+}
+
+.site-menu-link {  
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*---------- main-menu ---------- */
+
+.main-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu-link {
+  font-size: 14px;
+  font-weight: normal;
+  color: #323232;
+}
+
+/*---------- user-menu ---------- */
+
+.user-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0 0 3px red;
+}
+
+.user-menu-link {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/*---------- site-info ---------- */
+
+.work-hours {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.phone-number {
+  font-size: 22px;
+  font-weight: bold;
+}
