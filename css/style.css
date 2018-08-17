@@ -39,14 +39,12 @@ input[type="radio"].visually-hidden {
 /*------------------------------ main-header ------------------------------ */
 
 .main-header {
-  min-height: 73px;
-  box-shadow: 0 0 0 3px red;
+  /* min-height: 73px; */
   width: 100%;
 }
 
 .wrapper {
   width: 1146px;
-  box-shadow: 0 0 0 3px blue;
   margin: 0 auto;
 }
 
@@ -76,39 +74,23 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   margin-right: auto;
-  /* box-shadow: 0 0 0 3px red; */
-}
-
-.site-menu-item {
-  padding: 0 13px;
-  margin-right: 6px;
-  border-radius: 17px;
-  min-height: 32px;
 }
 
 .site-menu-link {
   font-size: 16px;
   font-weight: 700;
   position: relative;
-  box-sizing: box-content;
-  /* padding: 9px 0; */
   line-height: 32px;
+  border-radius: 17px;
+  padding: 9px 13px;
+  margin-right: 6px;  
 }
 
-.site-menu-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 1px;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.2);
-  background: red;
-  z-index: -1;
+.site-menu-link:not(:hover) .site-menu-text {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.site-menu-link:hover,
-.site-menu-item:hover {
+.site-menu-link:hover {
   color: #323232;
   background-color: #f7f6f3;
 }
