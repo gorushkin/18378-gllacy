@@ -82,8 +82,9 @@ input[type="radio"].visually-hidden {
   position: relative;
   line-height: 32px;
   border-radius: 17px;
-  padding: 9px 13px;
-  margin-right: 6px;  
+  padding: 6.5px 13px;
+  margin-right: 6px;
+  line-height: 1.13px;
 }
 
 .site-menu-link:not(:hover) .site-menu-text {
@@ -94,7 +95,6 @@ input[type="radio"].visually-hidden {
   color: #323232;
   background-color: #f7f6f3;
 }
-
 
 /*---------- main-menu ---------- */
 
@@ -117,39 +117,40 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin: 0;
   padding: 0;
-  /* box-shadow: 0 0 0 3px red; */
-}
-
-.user-menu-item {
-  padding-right: 13px;
-  padding: 0 13px;
-  margin-right: 10px;
-  border-radius: 17px;
-  min-height: 32px;
-  background:rgba(255, 255, 255, 0.2);
-}
-
-.search-link {
-  width: 32px;
-  padding: 0;
 }
 
 .user-menu-link {
   font-size: 14px;
   font-weight: 500;
   position: relative;
-  box-sizing: box-content;
-  height: 32px;
+  line-height: 1.14px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
+  padding: 6.5px 13px;
+  margin-right: 6px; 
+  background:rgba(255, 255, 255, 0.2);
+}
+
+.search-link {
+  width: 32px;
+  padding: 7.5px 0;
+
 }
 
 .user-menu-text {
   margin-left: 7px;
 }
 
+.user-menu-link:hover {
+  color: #333333;
+  background-color: #f8f7f4;
+}
 
+.user-menu-link:hover .icon {
+  fill: #000000;
+}
 
 
 
