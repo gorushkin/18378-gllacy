@@ -52,7 +52,7 @@ input[type="radio"].visually-hidden {
 
 .main-nav.wrapper {
   display: flex;
-} 
+}
 
 .main-menu,
 .search-form,
@@ -74,14 +74,47 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin: 0;
   padding: 0;
-  box-shadow: 0 0 0 3px red;
   margin-right: auto;
+  align-items: flex-start;
+  margin-top: 15px;
 }
 
-.site-menu-link {  
+.site-menu-item {
+  padding: 9px 13px;
+  margin-right: 6px;
+  border-radius: 17px;
+}
+
+.site-menu-link {
   font-size: 16px;
   font-weight: bold;
+  position: relative;
+  box-sizing: box-content;
+  padding: 9px 0;
 }
+
+.site-menu-link::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  background: red;
+  z-index: -1;
+}
+
+.site-menu-link:hover,
+.site-menu-item:hover {
+  color: #323232;
+  background-color: #f7f6f3;
+  
+}
+
+
+
+
 
 /*---------- main-menu ---------- */
 
