@@ -76,7 +76,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   margin-right: auto;
-  box-shadow: 0 0 0 3px red;
+  /* box-shadow: 0 0 0 3px red; */
 }
 
 .site-menu-item {
