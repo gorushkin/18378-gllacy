@@ -6,6 +6,7 @@ body {
   font-family: Roboto;
   color: #ffffff;
   position: relative;
+  
 }
 
 a {
@@ -42,13 +43,14 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   color: #fefefe;
   border: none;
-  /* border-radius: 10%/40%; */
+  /* border-radius: 20%/50%; */
   padding-top: 10px;
   padding-bottom: 10px;
   display: inline-block;
   background-image: linear-gradient(to top, #e74a35, #f26843);
   box-shadow: 0px 1px 2px 0 #ac1000;
   background-color: #f8f7f4;
+  border-radius: 40px;
 }
 
 
@@ -58,6 +60,7 @@ input[type="radio"].visually-hidden {
 .main-header {
   /* min-height: 73px; */
   width: 100%;
+  margin-bottom: 6px;
 }
 
 .wrapper {
@@ -394,56 +397,99 @@ input[type="radio"].visually-hidden {
 /*------------------------------ slider ------------------------------ */
 
 .slider {
-  height: 450px;
-  box-shadow: 0 0 0 3px green;
+  position: relative;
+  margin-bottom: -19px;
+  z-index: 1;
 }
 
+.slider-img {
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.slider div {
+  position: absolute;
+  bottom: 62px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo-title {
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+  width: 700px;
+  text-align: center;
+  line-height: 60px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.slider-button {
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  border-radius: 30px;
+  padding: 19px 41px;
+}
 
 /*------------------------------ banner-section ------------------------------ */
 
 .banner-section {
   display: flex;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .banner {
   width: 560px;
-  /* height: 229px; */
   border-radius: 15px;
-  box-shadow: 0 0 0 3px green;
   background: #3f0f0a;
-  padding-top: 23px;
+  padding-top: 15px;
   padding-left: 20px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  z-index: 2;
+}
+
+.left-banner {
+  background: url("../img/raspberries.jpg") no-repeat 50% 50%;
+}
+
+.right-banner {
+  background: url("../img/chocolate.jpg") no-repeat 50% 50%;
 }
 
 .banner-title {
   font-size: 35px;
   font-weight: bold;
-  line-height: 1.17;
   color: #ffffff;
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .banner-text {
   font-size: 18.5px;
   font-weight: bold;
-  line-height: 1.16;
+  letter-spacing: 0.001em;
   color: #ffffff;
   padding: 0;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 43px;
 }
 
 .banner-button {
-  /* display: inline; */
-  /* align-self: flex-end; */
-  /* float: right; */
-  /* display: inline-block; text-align: center; */
   align-self: flex-end;
+  margin-right: 20px;
+  font-size: 18.5px;
+  font-weight: bold;
+  padding: 11px 22px;
+  margin-bottom: 21px;
 }
