@@ -35,6 +35,22 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.button {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.33;
+  color: #fefefe;
+  border: none;
+  border-radius: 10%/40%;
+  padding: 15px 25px;
+  /* display: inline-block; */
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  box-shadow: 0px 1px 2px 0 #ac1000;
+  background-color: #f8f7f4;
+}
+
+
 
 /*------------------------------ main-header ------------------------------ */
 
@@ -53,7 +69,6 @@ input[type="radio"].visually-hidden {
   align-items: center;
 }
 
-.login-form,
 .site-info-wrapper,
 .cart-table-wrapper {
   display: none;
@@ -232,7 +247,7 @@ input[type="radio"].visually-hidden {
 
 .search-form-item {
   width: 311px;
-  height: 44px;
+  /* height: 44px; */
   padding-left: 10px;
   box-sizing: border-box;
   margin: 20px 15px;
@@ -245,18 +260,70 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
 }
 
+/*---------- login-form ---------- */
 
+.login-form-wrapper {
+  position: absolute;
+  top: 31px;
+  right: 7px;
+  /* box-shadow: 0 0 0 3px red; */
+  padding-top: 15px;
+  display: none;
+}
 
+.login-link:hover + .login-form-wrapper,
+.login-form-wrapper:hover {
+  display: block;
+}
 
+.login-form {
+  width: 277px;
+  box-sizing: border-box;
+  border-radius: 5.1px;
+  background-color: #f8f7f4;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  padding: 19px 20px 17px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.login-form-item {
+  box-sizing: border-box;
+  width: 241px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: solid 1px #d3d3d2;
+  margin-bottom: 20px;
+  padding: 16px 0 16px 15px;
+}
 
+.login-form-button {
+  width: 100px;
+  border-radius: 20px/25px;
+}
 
+.login-form-text {
+  width: 120px;
+  margin: 0;
+  padding: 0;
+}
 
-/* .user-menu-link:hover,
-.user-menu-item:hover {
+.login-form-links {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.85;
   color: #323232;
-  background-color: #f7f6f3;
-} */
+  text-decoration: underline;
+  margin-bottom: 8px;
+}
+
+
+
+
+
+
 
 
 
