@@ -246,7 +246,9 @@ input[type="radio"].visually-hidden {
 }
 
 .search-link:hover + .search-form-wrapper,
-.search-form-wrapper:hover {
+.search-link:focus + .search-form-wrapper,
+.search-form-wrapper:hover,
+.user-menu-item:focus-within > .search-form-wrapper {
   display: block;
 }
 
