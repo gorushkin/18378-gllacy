@@ -105,7 +105,8 @@ input[type="radio"].visually-hidden {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.site-menu-link:hover {
+.site-menu-link:hover,
+.site-menu-link:focus {
   color: #323232;
   background-color: #f7f6f3;
 }
@@ -133,7 +134,11 @@ input[type="radio"].visually-hidden {
 }
 
 .open-main-menu-link:hover + .menu-wrapper,
-.menu-wrapper:hover {
+.open-main-menu-link:focus + .menu-wrapper,
+/* .open-main-menu-link:focus-within + .menu-wrapper, */
+.site-menu-item:focus-within > .menu-wrapper,
+.menu-wrapper:hover,
+.menu-wrapper:focus-within {
   display: block;
 }
 
@@ -148,7 +153,8 @@ input[type="radio"].visually-hidden {
   display: inline-block;
 }
 
-.main-menu-link:hover {
+.main-menu-link:hover,
+.main-menu-link:focus {
   background-color: #fbded8;
 }
 
@@ -188,7 +194,6 @@ input[type="radio"].visually-hidden {
 .user-menu-link {
   font-size: 14px;
   font-weight: 500;
-  /* position: relative; */
   line-height: 1.14px;
   display: flex;
   align-items: center;
