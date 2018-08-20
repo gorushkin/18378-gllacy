@@ -279,7 +279,9 @@ input[type="radio"].visually-hidden {
 }
 
 .login-link:hover + .login-form-wrapper,
-.login-form-wrapper:hover {
+.login-link:focus + .login-form-wrapper,
+.login-form-wrapper:hover,
+.user-menu-item:focus-within > .login-form-wrapper {
   display: block;
 }
 
