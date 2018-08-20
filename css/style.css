@@ -5,6 +5,7 @@ body {
   padding: 0;
   font-family: Roboto;
   color: #ffffff;
+  position: relative;
 }
 
 a {
@@ -44,7 +45,7 @@ input[type="radio"].visually-hidden {
   border: none;
   border-radius: 10%/40%;
   padding: 15px 25px;
-  /* display: inline-block; */
+  display: inline-block;
   background-image: linear-gradient(to top, #e74a35, #f26843);
   box-shadow: 0px 1px 2px 0 #ac1000;
   background-color: #f8f7f4;
@@ -67,11 +68,7 @@ input[type="radio"].visually-hidden {
 .main-nav.wrapper {
   display: flex;
   align-items: center;
-}
-
-.site-info-wrapper,
-.cart-table-wrapper {
-  display: none;
+  position: relative;
 }
 
 .main-logo {
@@ -213,12 +210,14 @@ input[type="radio"].visually-hidden {
   margin-left: 7px;
 }
 
-.user-menu-link:hover {
+.user-menu-link:hover,
+.user-menu-link:focus {
   color: #333333;
   background-color: #f8f7f4;
 }
 
-.user-menu-link:hover .icon {
+.user-menu-link:hover .icon,
+.user-menu-link:focus .icon {
   fill: #000000;
 }
 
@@ -329,26 +328,94 @@ input[type="radio"].visually-hidden {
 }
 
 
+/*---------- cart-table-wrapper ---------- */
 
-
-
-
-
-
-
-
-
-
+.cart-table-wrapper {
+  display: none;
+}
 
 
 /*---------- site-info ---------- */
 
+
+.site-info-wrapper {
+  position: absolute;
+  right: 0;
+  top: 70px;
+  box-shadow: 0 0 0 3px red;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
 .work-hours {
   font-size: 14px;
   font-weight: bold;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .phone-number {
   font-size: 22px;
   font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*------------------------------ slider ------------------------------ */
+
+.slider {
+  height: 450px;
+  box-shadow: 0 0 0 3px green;
+}
+
+
+/*------------------------------ banner-section ------------------------------ */
+
+.banner-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner {
+  width: 560px;
+  /* height: 229px; */
+  border-radius: 15px;
+  box-shadow: 0 0 0 3px green;
+  background: #3f0f0a;
+  padding-top: 23px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.banner-title {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 1.17;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.banner-text {
+  font-size: 18.5px;
+  font-weight: bold;
+  line-height: 1.16;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 45px;
+}
+
+.banner-button {
+  /* display: inline; */
+  /* align-self: flex-end; */
+  /* float: right; */
+  /* display: inline-block; text-align: center; */
+  align-self: flex-end;
 }
