@@ -111,7 +111,7 @@ input[type="radio"].visually-hidden {
 .site-menu-link:hover,
 .site-menu-link:focus {
   color: #323232;
-  background-color: #f7f6f3;
+  background-color: #f7f6f3;     
 }
 
 
@@ -560,6 +560,7 @@ input[type="radio"].visually-hidden {
   background: url("../img/waffle.jpg");
   padding-top: 23px;
   padding-left: 20px;
+  padding-bottom: 15px;
 }
 
 .promo-text {
@@ -568,8 +569,8 @@ input[type="radio"].visually-hidden {
   color: #323232;
   padding: 0;
   margin: 0;
-  box-shadow: 0 0 0 3px red;
-  margin-bottom: 24px;
+  /* box-shadow: 0 0 0 3px red; */
+  margin-bottom: 12px;
   /* margin-left: 20px; */
 }
 
@@ -585,13 +586,31 @@ input[type="radio"].visually-hidden {
 .features-item {
   width: 540px;
   padding-left: 56px;
-  box-shadow: 0 0 0 3px red;
+  /* box-shadow: 0 0 0 3px red; */
   box-sizing: border-box;
-  margin-bottom: 22px;
+  margin-bottom: 8px;
+  
+  padding-top: 13px;
+}
+
+.features-item.ice-cream {
+  background: url("../img/ice-cream.svg") no-repeat 0% 0%;
+}
+
+.features-item.cow {
+  background: url("../img/cow.svg") no-repeat 0% 0%;
+}
+
+.features-item.eco {
+  background: url("../img/eco.svg") no-repeat 0% 0%;
+}
+
+.features-item.thermometer {
+  background: url("../img/thermometer.svg") no-repeat 0% 0%;
 }
 
 .features-item:nth-child(2n+1) {
-  margin-right: 28px;
+  margin-right: 26px;
 }
 
 .feature-text {
@@ -601,5 +620,5 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   line-height: 22px;
-  box-shadow: 0 0 0 3px blue;
+  /* box-shadow: 0 0 0 3px blue; */
 }
