@@ -123,6 +123,7 @@ input[type="radio"].visually-hidden {
   left: -6px;
   top: 15px;
   display: none;
+  z-index: 5;
 }
 
 .main-menu {
@@ -251,6 +252,7 @@ input[type="radio"].visually-hidden {
   padding-top: 15px;
   right: 0;
   bottom: -89px;
+  z-index: 5;
 }
 
 .search-form {
@@ -310,6 +312,7 @@ input[type="radio"].visually-hidden {
   right: -4px;
   padding-top: 15px;
   display: none;
+  z-index: 5;
 }
 
 .login-link:hover + .login-form-wrapper,
