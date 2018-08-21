@@ -446,6 +446,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   z-index: 2;
+  margin-bottom: 40px;
 }
 
 .banner {
@@ -495,4 +496,110 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   padding: 11px 22px;
   margin-bottom: 21px;
+}
+
+/*------------------------------ hits-section ------------------------------ */
+
+.hits-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+}
+
+.hits-list-item {
+  width: 267px;
+  position: relative;
+}
+
+.hit-image {
+  border-radius: 50%;
+  margin-bottom: 11px;
+}
+
+.hit-price {
+  position: absolute;
+  font-size: 45px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+  top: 160px;
+}
+
+.hit-price  span {
+  font-size: 30px;
+}
+
+
+.hit-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  line-height: 22px;
+}
+
+.hits-list-item::after {
+  content: "";
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  background: url("../img/hit.svg");
+  top: 0;
+  left: 0;
+}
+
+/*------------------------------ features-section ------------------------------ */
+
+.features-section {
+  /* box-shadow: 0 0 0 3px red; */
+  border-radius: 15px;
+  background: url("../img/waffle.jpg");
+  padding-top: 23px;
+  padding-left: 20px;
+}
+
+.promo-text {
+  font-size: 24px;
+  font-weight: 500;
+  color: #323232;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 0 0 3px red;
+  margin-bottom: 24px;
+  /* margin-left: 20px; */
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.features-item {
+  width: 540px;
+  padding-left: 56px;
+  box-shadow: 0 0 0 3px red;
+  box-sizing: border-box;
+  margin-bottom: 22px;
+}
+
+.features-item:nth-child(2n+1) {
+  margin-right: 28px;
+}
+
+.feature-text {
+  font-size: 16px;
+  font-weight: normal;
+  color: #323232;
+  padding: 0;
+  margin: 0;
+  line-height: 22px;
+  box-shadow: 0 0 0 3px blue;
 }
