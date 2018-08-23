@@ -526,7 +526,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   display: flex;
-  margin-bottom: 38px;
+  /* margin-bottom: 1px; */
+  margin-bottom: -50px;
 }
 
 .hits-list-item {
@@ -534,6 +535,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   padding: 6px 13px 22px 13px;
   border-radius: 5px;
+  /* margin-bottom: -50px; */
 }
 
 .hits-list-item:hover {
@@ -552,7 +554,7 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   color: #ffffff;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
-  top: 160px;
+  top: 166px;
 }
 
 .hit-price  span {
@@ -566,15 +568,22 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   text-align: center;
   line-height: 22px;
-  margin-bottom: 17px;
-}
-
-.fast-view-button {
+  margin-bottom: 15px;
 }
 
 .fast-view-button {
   padding: 13px 17px;
   margin-left: 33px;
+  opacity: 0;
+}
+
+.hits-list-item:hover {
+  background: rgba(248, 247, 244, 0.2);
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.hits-list-item:hover .fast-view-button {
+  opacity: 1;
 }
 
 .hits-list-item::after {
