@@ -102,6 +102,11 @@ input[type="radio"].visually-hidden {
   padding: 6.5px 13px;
   margin-right: 3px;
   line-height: 1.13px;
+  z-index: 5;
+}
+
+.site-menu-link.current {
+  background-color: #d07058;
 }
 
 .site-menu-link:not(:hover) .site-menu-text {
@@ -114,6 +119,9 @@ input[type="radio"].visually-hidden {
   background-color: #f7f6f3;     
 }
 
+.site-menu-link:active {
+  box-shadow: inset 0px 2px 1px 0 #696969;
+}
 
 /*---------- main-menu ---------- */
 
@@ -123,7 +131,8 @@ input[type="radio"].visually-hidden {
   left: -6px;
   top: 15px;
   display: none;
-  z-index: 5;
+  z-index: 4;
+  /* box-shadow: 0 0 0 3px red; */
 }
 
 .main-menu {
@@ -589,7 +598,6 @@ input[type="radio"].visually-hidden {
   /* box-shadow: 0 0 0 3px red; */
   box-sizing: border-box;
   margin-bottom: 8px;
-  
   padding-top: 13px;
 }
 
