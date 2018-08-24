@@ -818,5 +818,30 @@ input[type="radio"].visually-hidden {
 
 .feedback-button {
   display: block;
-  /* width: 100%; */
 }
+
+/*------------------------------ main-footer ------------------------------ */
+
+.footer .wrapper {
+  display: flex;
+}
+
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.social-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  fill: rgba(255, 255, 255, 0.8);
