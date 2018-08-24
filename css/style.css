@@ -783,14 +783,18 @@ input[type="radio"].visually-hidden {
   border-radius: 15px;
   box-sizing: border-box;
 }
+.company-address {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 17px;
+}
 
 .contact-description {
   font-size: 14px;
   font-weight: normal;
   color: #323232;
   line-height: 20px;
-  padding: 0;
-  margin: 0;
+  display: block;
   width: 180px;
   margin-bottom: 1px;
 }
@@ -799,8 +803,20 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   font-weight: bold;
   color: #323232;
-  padding: 0;
-  margin: 0;
   line-height: 24px;
-  margin-bottom: 17px;
+  margin-bottom: 3px;
+  display: block;
+}
+
+.company-phone .contact-description {
+  margin-bottom: 3px;
+}
+
+.company-phone {
+  margin-bottom: 23px;
+}
+
+.feedback-button {
+  display: block;
+  /* width: 100%; */
 }
