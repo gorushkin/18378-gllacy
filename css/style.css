@@ -63,8 +63,7 @@ input[type="radio"].visually-hidden {
 }
 
 .link {
-  font-size: 13px;
-  font-weight: normal;
+  
   color: #ffffff;
   position: relative;
   /* text-decoration: underline; */
@@ -75,7 +74,8 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   width: 100%;
-  top: 15px;
+  /* top: 15px;*/
+  bottom: 0;
   left: 0;
   height: 1px;
   background: rgba(255, 255, 255, 0.2);
@@ -937,18 +937,10 @@ footer .wrapper {
 }
 
 .information-link {
-  /* font-size: 13px;
+  font-size: 13px;
   font-weight: normal;
-  color: #ffffff;
-  text-decoration: underline;
-  text-decoration-color: rgba(255, 255, 255, 0.2); */
   position: relative;
 }
-
-/* .information-link:hover,
-.information-link:focus {
-  color: #ffbc9e;
-} */
 
 .heart::before {
   content: "";
