@@ -761,11 +761,27 @@ input[type="radio"].visually-hidden {
   width: 100%;
   overflow: hidden;
   height: 430px;
+  /* box-shadow: 0 0 0 3px black; */
+}
+
+.map {
+  display: block;
+  margin: auto;
+  z-index: -1;
+  /* box-shadow: 0 0 0 3px red; */
+  transform: translateY(-135px);
+}
+
+.map-wrap iframe {
+  z-index: 5;
+  margin: auto;
+  display: block;
+  width:100%;
+  /* box-shadow: 0 0 0 3px red; */
 }
 
 .company-card-wrapper {
   width: 1146px;
-  /* box-shadow: 0 0 0 3px red; */
   margin: 0 auto;
   position: relative;
 }
@@ -821,6 +837,8 @@ input[type="radio"].visually-hidden {
 
 /*------------------------------ main-footer ------------------------------ */
 
+co
+
 .footer .wrapper {
   display: flex;
 }
@@ -846,3 +864,4 @@ input[type="radio"].visually-hidden {
 .social-icon {
   fill: rgba(255, 255, 255, 0.8);
 }
+
