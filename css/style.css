@@ -268,6 +268,21 @@ input[type="radio"].visually-hidden {
   padding-left: 38px;
 }
 
+.basket-link.notempty::before {
+  content: "";
+  width: 21px;
+  height: 20px;
+  top: 6px;
+  left:15px;
+  position: absolute;
+  background: url("../img/basket-red.svg") 50% 50% no-repeat;
+}
+
+.basket-link.notempty:hover::before,
+.basket-link.notempty:focus::before {
+  background: url("../img/basket-red_black.svg") 50% 50% no-repeat;
+}
+
 .basket-link::before {
   content: "";
   width: 21px;
@@ -276,6 +291,11 @@ input[type="radio"].visually-hidden {
   left:15px;
   position: absolute;
   background: url("../img/basket.svg") 50% 50% no-repeat;
+}
+
+.basket-link:hover::before,
+.basket-link:focus::before {
+  background: url("../img/basket_black.svg") 50% 50% no-repeat;
 }
 
 .login-link::before {
@@ -288,6 +308,11 @@ input[type="radio"].visually-hidden {
   background: url("../img/entrance.svg") 50% 50% no-repeat;
 }
 
+.login-link:hover::before,
+.login-link:focus::before {
+  background: url("../img/entrance_black.svg") 50% 50% no-repeat;
+}
+
 .search-link::before {
   content: "";
   width: 21px;
@@ -296,6 +321,11 @@ input[type="radio"].visually-hidden {
   left:5px;
   position: absolute;
   background: url("../img/loupe.svg") 50% 50% no-repeat;
+}
+
+.search-link:hover::before,
+.search-link:focus::before {
+  background: url("../img/loupe_black.svg") 50% 50% no-repeat;
 }
 
 .search-link {
@@ -310,15 +340,18 @@ input[type="radio"].visually-hidden {
 }
 
 .user-menu-link:hover,
-.user-menu-link:focus {
+.user-menu-link:focus,
+.basket-link.notempty {
   color: #333333;
   background-color: #f8f7f4;
 }
 
-.user-menu-link:hover .icon,
+
+
+/* .user-menu-link:hover .icon,
 .user-menu-link:focus .icon {
   fill: #000000;
-}
+} */
 
 /*---------- search-form ---------- */
 
@@ -442,10 +475,6 @@ input[type="radio"].visually-hidden {
   line-height: 20px;
   color: #323232;
   text-decoration: underline;
-}
-
-.user-menu-link svg{
-  
 }
 
 
