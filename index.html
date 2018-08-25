@@ -177,7 +177,7 @@
       <section class="contact-section">
         <h2 class="section-title visually-hidden">Как к нам проехать</h2>
         <div class="map-wrapper">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003203!2d30.320858716192703!3d59.93871916905401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1535219876208" width="2000" height="640" style="border:0" allowfullscreen></iframe>
+          <!-- <iframe tabindex="-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003203!2d30.320858716192703!3d59.93871916905401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1535219876208" width="2000" height="640" style="border:0" allowfullscreen></iframe> -->
           <img class="map" src="img/map.jpg" alt="Наш адрес - ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="640">
         </div>
         <div class="company-card-wrapper">
@@ -221,14 +221,22 @@
             </a></li>
         </ul>
         <ul class="information-list">
-          <li class="information-item"><a href="" class="information-link">Для поставщиков</a></li>
-          <li class="information-item"><a href="" class="information-link">Наши документы</a></li>
-          <li class="information-item"><a href="" class="information-link">О производстве</a></li>
-          <li class="information-item"><a href="" class="information-link">Экологические стандарты</a></li>
+          <li>
+            <ul class="information-column">
+              <li class="information-item"><a href="" class="information-link link heart">Для поставщиков</a></li>            
+              <li class="information-item"><a href="" class="information-link link">О производстве</a></li>            
+            </ul>
+          </li>
+          <li>
+            <ul class="information-column">              
+              <li class="information-item"><a href="" class="information-link link">Наши документы</a></li>              
+              <li class="information-item"><a href="" class="information-link link">Экологические стандарты</a></li>
+            </ul>
+          </li>  
         </ul>
         <p class="footer-copyright">
-          <a href=""><img class="footer-copyright-logo" alt="Сделано в HTML Academy © 2017" src="http://placehold.it/108x39" width="108" height="39"></a>
-          <b class="studio-block-text">Сделано в HTML Academy © 2017</b>
+          <a href=""><img class="footer-copyright-logo" alt="Сделано в HTML Academy © 2017" src="img/logo-htmlacademy.svg" width="108" height="39"></a>
+          <b class="studio-block-text">Сделано в <a class="link" href="">HTML Academy</a> © 2017</b>
         </p>
       </div>
     </footer>
