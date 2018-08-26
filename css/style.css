@@ -388,6 +388,8 @@ input[type="radio"].visually-hidden {
   padding: 11px 0 11px 13px;
   color: #323232;
   font-weight: 400;
+  font-family: inherit;
+  /* font-family: 'Times New Roman', Times, serif; */
 }
 
 .form-item::placeholder {
@@ -1157,6 +1159,7 @@ footer .wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  display: none;
 }
 
 .write-to-us-form {
@@ -1180,7 +1183,8 @@ footer .wrapper {
 .write-to-us-form-item {
   width: 267px;
   margin-bottom: 20px;
-  font-family: inherit;  
+  font-family: inherit;
+    
 }
 
 .write-to-us-form textarea {
@@ -1193,4 +1197,21 @@ footer .wrapper {
   align-self: flex-end;
   margin-bottom: 27px;
   padding: 10px 22px;
+}
+
+.write-to-us-close {
+  font-size: 0;
+  border: none;
+  width: 18px;
+  height: 17px;
+  background: url("../img/cross-big.svg") 50% 50% no-repeat;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+
+.show-modal {
+  display: flex;
 }
