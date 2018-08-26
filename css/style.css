@@ -346,12 +346,6 @@ input[type="radio"].visually-hidden {
 }
 
 
-
-/* .user-menu-link:hover .icon,
-.user-menu-link:focus .icon {
-  fill: #000000;
-} */
-
 /*---------- search-form ---------- */
 
 .search-link {
@@ -510,8 +504,7 @@ td {
 }
 
 .cross-big {
-  padding-left: 4px;
-  
+  padding-left: 4px;  
 }
 
 .remove-button {
@@ -1145,4 +1138,59 @@ footer .wrapper {
 .studio-block-text .link {
   font-size: inherit;
   font-weight: inherit;
+}
+
+/*------------------------------ write-to-us ------------------------------ */
+
+.write-to-us {
+  width: 478px;
+  background-color: #f8f7f4;
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 15;
+  margin-left: -238px;
+  border-radius: 10px;
+  margin-top: -139px;
+  padding: 15px 26px 0 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.write-to-us-form {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* background: red; */
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: #323232;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  /* widows: 400px; */
+}
+
+.write-to-us-form-item {
+  width: 267px;
+  margin-bottom: 20px;
+  font-family: inherit;  
+}
+
+.write-to-us-form textarea {
+  width: 428px;
+  margin-bottom: 25px;
+  /* font-size: inherit; */
+}
+
+.write-to-us-button {
+  align-self: flex-end;
+  margin-bottom: 27px;
+  padding: 10px 22px;
 }
