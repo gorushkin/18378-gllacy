@@ -145,6 +145,10 @@ input[type="radio"].visually-hidden {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.site-menu-link.current .site-menu-text {
+  border-bottom: none;
+}
+
 .site-menu-link:hover,
 .site-menu-link:focus {
   color: #323232;
@@ -295,6 +299,21 @@ input[type="radio"].visually-hidden {
 .cart-link:hover::before,
 .cart-link:focus::before {
   background: url("../img/basket_black.svg") 50% 50% no-repeat;
+}
+
+.cart-link.notempty::before {
+  content: "";
+  width: 21px;
+  height: 20px;
+  top: 6px;
+  left:15px;
+  position: absolute;
+  background: url("../img/basket-red.svg") 50% 50% no-repeat;
+}
+
+.cart-link.notempty:hover::before,
+.cart-link.notempty:focus::before {
+  background: url("../img/basket-red_black.svg") 50% 50% no-repeat;
 }
 
 .login-link::before {
