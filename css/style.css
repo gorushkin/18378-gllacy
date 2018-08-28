@@ -660,7 +660,7 @@ td {
   display: flex;
   justify-content: space-between;
   z-index: 2;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 
 .banner {
@@ -669,6 +669,7 @@ td {
   background: #3f0f0a;
   padding-top: 15px;
   padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
@@ -694,9 +695,10 @@ td {
 }
 
 .banner-text {
-  font-size: 18.5px;
+  font-size: 18px;
   font-weight: bold;
-  letter-spacing: 0.001em;
+  /* letter-spacing: 0.001em; */
+  line-height: 23px;
   color: #ffffff;
   padding: 0;
   margin: 0;
@@ -705,11 +707,11 @@ td {
 
 .banner-button {
   align-self: flex-end;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   font-size: 18.5px;
   font-weight: bold;
   padding: 11px 22px;
-  margin-bottom: 21px;
+  margin-bottom: 25px;
 }
 
 /*------------------------------ hits-section ------------------------------ */
@@ -724,16 +726,18 @@ td {
   margin: 0;
   padding: 0;
   display: flex;
-  /* margin-bottom: 1px; */
-  margin-bottom: -50px;
+  margin-bottom: 38px;
 }
 
 .hits-list-item {
   width: 293px;
   position: relative;
-  padding: 6px 13px 22px 13px;
+  padding: 6px 13px 0px 13px;
   border-radius: 5px;
   /* margin-bottom: -50px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hits-list-item:hover,
@@ -744,7 +748,7 @@ td {
 
 .hit-image {
   border-radius: 50%;
-  margin-bottom: 11px;
+  margin-bottom: 14px;
 }
 
 .hit-price {
@@ -767,15 +771,16 @@ td {
   display: inline-block;
   text-align: center;
   line-height: 22px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   text-decoration: underline;
   text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
 .fast-view-button {
   padding: 13px 17px;
-  margin-left: 33px;
-  opacity: 0;
+  /* margin-left: 33px; */
+  /* opacity: 0; */
+  display: none;
 }
 
 .hits-list-item:hover {
@@ -784,7 +789,7 @@ td {
 }
 
 .hits-list-item:hover .fast-view-button {
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 .hits-list-item::after {
