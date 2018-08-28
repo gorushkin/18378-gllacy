@@ -268,7 +268,7 @@ input[type="radio"].visually-hidden {
 
 .cart-link,
 .login-link {
-  padding-left: 38px;
+  padding-left: 36px;
 }
 
 .cart-link.notempty::before {
@@ -286,13 +286,19 @@ input[type="radio"].visually-hidden {
   background: url("../img/basket-red_black.svg") 50% 50% no-repeat;
 }
 
-.cart-link::before {
+.cart-link::before,
+.login-link::before,
+.cart-link.notempty::before {
   content: "";
   width: 21px;
   height: 20px;
-  top: 6px;
+  top: 5px;
   left:15px;
   position: absolute;
+}
+
+
+.cart-link::before {
   background: url("../img/basket.svg") 50% 50% no-repeat;
 }
 
@@ -302,12 +308,6 @@ input[type="radio"].visually-hidden {
 }
 
 .cart-link.notempty::before {
-  content: "";
-  width: 21px;
-  height: 20px;
-  top: 6px;
-  left:15px;
-  position: absolute;
   background: url("../img/basket-red.svg") 50% 50% no-repeat;
 }
 
@@ -317,12 +317,6 @@ input[type="radio"].visually-hidden {
 }
 
 .login-link::before {
-  content: "";
-  width: 21px;
-  height: 20px;
-  top: 5px;
-  left:18px;
-  position: absolute;
   background: url("../img/entrance.svg") 50% 50% no-repeat;
 }
 
@@ -332,12 +326,6 @@ input[type="radio"].visually-hidden {
 }
 
 .search-link::before {
-  content: "";
-  width: 21px;
-  height: 20px;
-  top: 5px;
-  left:5px;
-  position: absolute;
   background: url("../img/loupe.svg") 50% 50% no-repeat;
 }
 
@@ -350,7 +338,6 @@ input[type="radio"].visually-hidden {
   width: 32px;
   height: 32px;
   box-sizing: border-box;
-  /* background: url("../img/loupe.svg") 9px 7px no-repeat; */
 }
 
 .user-menu-text {
