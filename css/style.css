@@ -1258,7 +1258,7 @@ footer .wrapper {
   margin: 0;
   padding: 0;
   display: flex;
-  /* box-shadow: 0 0 0 3px red; */
+  margin-bottom: 4px;
 }
 
 .breadcrumbs-links {
@@ -1276,11 +1276,34 @@ li:not(:last-of-type) .breadcrumbs-links::after {
   right: -15px;
 }
 
+.section-title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+  padding: 0;
+  margin: 0;
+}
 
+.filter-form fieldset {
+  border: none;
+}
 
+.filter-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
 
-
-
+.filter-form-element {
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: lowercase;
+  /* display: inline-block; */
+  padding: 8px 16px 8px 16px;
+  border-radius: 25px;
+}
 
 
 
