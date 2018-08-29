@@ -1243,9 +1243,52 @@ footer .wrapper {
 /*------------------------------ CATALOG ------------------------------ */
 
 .catalog {
-  /* margin: 0 auto; */
   width: 1200px;
 }
+
+.catalog-header {
+  margin-bottom: 20px;
+}
+
+
+/*---------- breadcrumbs ---------- */
+
+.breadcrumbs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* box-shadow: 0 0 0 3px red; */
+}
+
+.breadcrumbs-links {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-right: 22px;
+  position: relative;
+}
+
+li:not(:last-of-type) .breadcrumbs-links::after {
+  content: "»";
+  position: absolute;
+  top: 1px;
+  right: -15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .catalog .hits-list {
   margin-left: -13px;
