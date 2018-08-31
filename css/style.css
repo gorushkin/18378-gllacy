@@ -286,6 +286,7 @@ input[type="radio"].visually-hidden {
   background: url("../img/basket-red_black.svg") 50% 50% no-repeat;
 }
 
+.search-link::before,
 .cart-link::before,
 .login-link::before,
 .cart-link.notempty::before {
@@ -326,6 +327,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-link::before {
+  left: auto;
   background: url("../img/loupe.svg") 50% 50% no-repeat;
 }
 
@@ -365,8 +367,6 @@ input[type="radio"].visually-hidden {
   right: 0;
   bottom: -87px;
   z-index: 5;
-  /* box-shadow: 0 0 0 3px red; */
-  
 }
 
 .search-form {
@@ -832,7 +832,6 @@ td {
   padding: 0;
   margin: 0;
   letter-spacing: 0.005em;
-  /* box-shadow: 0 0 0 3px red; */
   margin-bottom: 10px;
 }
 
@@ -842,7 +841,6 @@ td {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  /* box-shadow: 0 0 0 3px red; */
 }
 
 .features-item {
@@ -851,7 +849,6 @@ td {
   box-sizing: border-box;
   margin-bottom: 8px;
   padding-top: 13px;
-  /* box-shadow: 0 0 0 3px blue; */
 }
 
 .features-item.ice-cream {
@@ -1183,7 +1180,7 @@ footer .wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  /* display: none; */
+  display: none;
 }
 
 .write-to-us-form {
