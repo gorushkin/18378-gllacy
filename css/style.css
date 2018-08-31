@@ -1294,18 +1294,20 @@ li:not(:last-of-type) .breadcrumbs-links::after {
   line-height: 16px;
 }
 
-.filter-form-element {
+.filter-label {
   border: none;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   text-transform: lowercase;
-  /* display: inline-block; */
   padding: 8px 16px 8px 16px;
   border-radius: 25px;
 }
 
 
+/*---------- sort-option ---------- */
+
+.sort-option
 
 
 
