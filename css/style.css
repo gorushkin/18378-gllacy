@@ -1295,20 +1295,31 @@ li:not(:last-of-type) .breadcrumbs-links::after {
   border: none;
   font-size: 16px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 21px;
   text-transform: lowercase;
   padding: 8px 16px 8px 16px;
   border-radius: 25px;
 }
 
+.filter-form-element {
+  padding: 8px 16px 8px 16px;
+}
+
 
 /*---------- sort-option ---------- */
 
-.sort-option
+/* .sort-option */
 
 
 
+/*---------- richness ---------- */
 
+.filter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
 
 
