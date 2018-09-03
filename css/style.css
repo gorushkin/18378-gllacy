@@ -1279,38 +1279,74 @@ li:not(:last-of-type) .breadcrumbs-links::after {
   line-height: 41px;
   padding: 0;
   margin: 0;
+  margin-bottom: 26px;
+}
+
+.filter-form {
+  /* width: 870px; */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .filter-form fieldset {
   border: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 17px;
 }
 
 .filter-title {
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
+  margin-left: 16px;
+  margin-bottom: 6px;
 }
 
 .filter-label {
   border: none;
   font-size: 16px;
   font-weight: 500;
-  line-height: 21px;
+  line-height: 37px;
   text-transform: lowercase;
   padding: 8px 16px 8px 16px;
   border-radius: 25px;
 }
 
 .filter-form-element {
-  padding: 8px 16px 8px 16px;
+  padding: 8px 28px 8px 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
 
 
 /*---------- sort-option ---------- */
 
-/* .sort-option */
 
+/*---------- range-filter ---------- */
 
+.price-controls {
+  font-size: 14px;
+}
+
+.range-filter input {
+  border: none;
+  background: transparent;
+  width: 27px;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-size: 14px;
+  padding: 0;
+}
+
+.range-controls {
+  width: 220px;
+  height: 37px;
+  background-color: #ffffff;
+  opacity: 0.2;
+  border-radius: 25px;
+}
 
 /*---------- richness ---------- */
 
@@ -1319,7 +1355,45 @@ li:not(:last-of-type) .breadcrumbs-links::after {
   margin: 0;
   padding: 0;
   display: flex;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
 }
+
+.filter-list-item {
+  padding-left: 25px;
+}
+
+.filter-list-item input {
+  /* position: relative; */
+}
+
+.filter-radio + .filter-label {
+  position: relative;
+  
+}
+
+/* .filter-radio + .filter-label::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  left: -20px;
+  top: 5px;
+  background-color: red;
+  background: url("../img/radio-off.svg") no-repeat;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
