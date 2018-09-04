@@ -803,7 +803,7 @@ td {
   display: flex;
 }
 
-.hits-list-item::after {
+.hits-list-item.hit::after {
   content: "";
   position: absolute;
   width: 61px;
@@ -1285,6 +1285,8 @@ li:not(:last-of-type) .breadcrumbs-links::after {
 .filter-form {
   display: flex;
   flex-wrap: wrap;
+  /* box-shadow: 0 0 0 3px red; */
+  margin-bottom: 15px;
 }
 
 .filter-form fieldset {
@@ -1441,7 +1443,7 @@ li:not(:last-of-type) .breadcrumbs-links::after {
 }
 
 
-
+/*------------------------------ catalog ------------------------------ */
 
 
 
