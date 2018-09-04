@@ -1286,6 +1286,8 @@ li:not(:last-of-type) .breadcrumbs-links::after {
   /* width: 870px; */
   display: flex;
   flex-wrap: wrap;
+  /* align-items: center; */
+  /* align-items: flex-end; */
 }
 
 .filter-form fieldset {
@@ -1293,6 +1295,7 @@ li:not(:last-of-type) .breadcrumbs-links::after {
   padding: 0;
   margin: 0;
   margin-right: 14px;
+  margin-bottom: 16px;
 }
 
 .filter-title {
@@ -1318,7 +1321,7 @@ li:not(:last-of-type) .breadcrumbs-links::after {
   border-radius: 25px;
   font-size: 16px;
   font-weight: 500;
-  line-height: 37px;
+  /* line-height: 37px; */
   border: none;
 }
 
@@ -1384,15 +1387,38 @@ li:not(:last-of-type) .breadcrumbs-links::after {
   background: url("../img/radio-on.svg") no-repeat;
 }
 
+/*---------- topics ---------- */
+
+.filter-checkbox + .filter-label::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  left: 0px;
+  top: -1px;
+  background-color: red;
+  background: url("../img/checkbox-off.svg") no-repeat;
+}
+
+.filter-checkbox:checked + .filter-label::before {
+  background: url("../img/checkbox-on.svg") no-repeat;
+}
 
 
 
 
 
+.button-wrapper {
+  box-shadow: 0 0 0 3px red;
+}
 
-
-
-
+.filter-button {
+  display: block;
+  line-height: 21px;
+  /* margin-top: 16px; */
+  margin-top: auto;
+  margin-top: 22px;
+}
 
 
 
