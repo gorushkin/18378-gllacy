@@ -1292,7 +1292,7 @@ li:not(:last-of-type) .breadcrumbs-links::after {
   border: none;
   padding: 0;
   margin: 0;
-  margin-right: 17px;
+  margin-right: 14px;
 }
 
 .filter-title {
@@ -1309,14 +1309,17 @@ li:not(:last-of-type) .breadcrumbs-links::after {
   font-weight: 500;
   line-height: 37px;
   text-transform: lowercase;
-  padding: 8px 16px 8px 16px;
-  border-radius: 25px;
 }
 
 .filter-form-element {
-  padding: 8px 28px 8px 12px;
   background-color: rgba(255, 255, 255, 0.2);
   color: #ffffff;
+  padding: 8px 30px 8px 13px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 37px;
+  border: none;
 }
 
 
@@ -1357,33 +1360,29 @@ li:not(:last-of-type) .breadcrumbs-links::after {
   display: flex;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 25px;
+  padding-left: 14px;
 }
 
-.filter-list-item {
-  padding-left: 25px;
-}
-
-.filter-list-item input {
-  /* position: relative; */
-}
-
-.filter-radio + .filter-label {
+.filter-label {
+  margin-right: 18px;
+  padding-left: 32px;
   position: relative;
-  
 }
 
-/* .filter-radio + .filter-label::before {
+.filter-radio + .filter-label::before {
   position: absolute;
   content: "";
   width: 25px;
   height: 25px;
-  left: -20px;
-  top: 5px;
+  left: 0px;
+  top: -2px;
   background-color: red;
   background: url("../img/radio-off.svg") no-repeat;
-} */
+}
 
-
+.filter-radio:checked + .filter-label::before {
+  background: url("../img/radio-on.svg") no-repeat;
+}
 
 
 
