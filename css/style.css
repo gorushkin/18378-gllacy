@@ -747,6 +747,8 @@ td {
 .hit-image {
   border-radius: 50%;
   margin-bottom: 14px;
+  width: 267px;
+  height: 267px;
 }
 
 .hit-price {
@@ -1240,7 +1242,7 @@ footer .wrapper {
 /*------------------------------ CATALOG ------------------------------ */
 
 .catalog {
-  width: 1200px;
+  /* width: 1200px; */
 }
 
 .catalog-header {
@@ -1445,10 +1447,66 @@ li:not(:last-of-type) .breadcrumbs-links::after {
 
 /*------------------------------ catalog ------------------------------ */
 
-
-
+.catalog {
+  /* box-shadow: 0 0 0 3px green; */
+}
 
 .catalog .hits-list {
-  margin-left: -13px;
-  margin-right: 13px;
+  margin-left: -14px;
+  margin-right: -14px;
+  /* box-shadow: 0 0 0 3px blue; */
+  margin-bottom: 49px;
+}
+
+.catalog .hits-list-item {
+  margin-bottom: 30px;
+}
+
+.paginator-list {
+  width: 190px;
+  margin-left: auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.paginator-item.prev a,
+.paginator-item.next a {
+  height: 26px;
+  width: 23px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.paginator-item.prev a {
+  transform: rotate(180deg);
+}
+
+.paginator-item.stop path {
+  fill: rgba(255, 255, 255, 0.2)
+}
+
+.page a {
+  font-size: 16px;
+  font-weight: 500;  
+  color: #ffffff;
+  display: block;
+  border-radius: 50%;
+  padding: 5px 9px 3px 9px;
+  margin-right: 2px;
+}
+
+.page a:hover,
+.page a:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.page.current a,
+.page a:active {
+  background-color: #ffffff;
+  color: #323232;
 }
